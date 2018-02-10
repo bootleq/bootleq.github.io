@@ -1,6 +1,6 @@
 var
   blogId = '1470457395436625875',
-  img_base = 'http://www.bootleq.com/blogger/',
+  img_base = 'https://bootleq.github.io/blogspot/',
   pageType = null,
   leq_se1 = null,
   leq_se2 = null,
@@ -23,10 +23,10 @@ jQuery(document).ready( function($){
   pageType = $('#dataBlogPageType').attr('value') ? $('#dataBlogPageType').attr('value').replace('type_','') : "type_undefined";
   prefs_jar = $.cookieJar('prefs', {expires:86400000, path:'/', cacheCookie:false});   // 100 天
 
-  leq_se1 = new BlogNoise(img_base + 'flashSound/cursor1.mp3');
-  leq_se2 = new BlogNoise(img_base + 'flashSound/close03.mp3');
+  leq_se1 = new BlogNoise(img_base + 'media/cursor1.mp3');
+  leq_se2 = new BlogNoise(img_base + 'media/close03.mp3');
 
-  dp.SyntaxHighlighter.ClipboardSwf = img_base+'clipboard.swf';
+  dp.SyntaxHighlighter.ClipboardSwf = img_base + 'media/clipboard.swf';
   dp.SyntaxHighlighter.BloggerMode();
 
   maincontentFx($);
