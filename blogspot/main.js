@@ -230,7 +230,9 @@ function maincontentFx($)
     imageBtnPrev: img_base+'img/lightbox/btn-prev.gif',
     imageBtnNext: img_base+'img/lightbox/btn-next.gif',
     imageBlank: img_base+'img/lightbox/blank.gif',
-    containerBorderSize: 15, onNextPrev: leq_se1.play, onFinish: leq_se2.play
+    containerBorderSize: 15,
+    onNextPrev: () => leq_se1.play(),
+    onFinish:   () => leq_se2.play()
   });
   $('.postcontent img:not(.no-lb)').each(function(){
     var fullSrc = $(this).attr('src');  // 原圖的位址
