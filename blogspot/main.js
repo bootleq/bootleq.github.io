@@ -254,7 +254,7 @@ function maincontentFx($)
 
   // postheader h2 背景效果
   $('.postheader h2').mouseover(function(e){
-    $(this).animate({backgroundPosition: (e.clientX - $(this).offset().left -64) + 'px 0%'}, 300);
+    $(this).animate({backgroundPositionX: (e.clientX - $(this).offset().left -64)}, 300);
   });
 
   // 電梯向下
