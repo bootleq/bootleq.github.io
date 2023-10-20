@@ -176,11 +176,12 @@ function SidebarFx($)
   };
 
   $('#Feed2 .widget-content').html('<div id="divrc"></div>').find('#divrc').html(rcPreSetting.rcFoldImage[4]);
-    rcFunction.addHeaderButton();
-    rcFunction.fetchComments(rcSetting.commentStartIndex, rcPreSetting.g_iShowCount);
-    $('#divrc li').live('mouseover', function(){
+  rcFunction.addHeaderButton();
+  rcFunction.fetchComments(rcSetting.commentStartIndex, rcPreSetting.g_iShowCount);
+  $(document).on('mouseover', '#divrc li', function(){
     $(this).find('.rcfold img').attr('src', img_base+'img/rc2/at-blink.gif');
-  }).live('mouseout', function(){
+  })
+  $(document).on('mouseout', '#divrc li', function(){
     $(this).find('.rcfold img').attr('src', img_base+'img/rc2/at.gif');
   });
 
