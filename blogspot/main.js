@@ -38,30 +38,14 @@ jQuery(document).ready( function($){
 
 function SidebarFx($)
 {
-    // sidebar 折疊
-    $('#sidebar').dblclick(function(){
-        $('#toggleSidebarBtn').show();
-    });
-    $('#toggleSidebarBtn').toggle(
-        function(){
-            leq_se1.play();
-            $('#sidebar').hide(700);
-            $('#content').css({'max-width': '100%'}).animate({
-                width: '100%'
-            }, 400, 'swing', function(){
-                $('#toggleSidebarBtn').val('<<');
-            });
-        },
-        function(){
-            leq_se1.play();
-            $('#sidebar').show(700);
-            $('#content').css({'max-width': '1200px'}).animate({
-                width: '70%'
-            }, 400, 'swing', function(){
-                $('#toggleSidebarBtn').val('>>');
-            });
-        }
-    );
+  let $toggle = $('#toggleSidebarBtn');
+  let $sidebar = $('#sidebar');
+
+  $('#toggleSidebarBtn').click(() => {
+    let top = $toggle.offset().top;
+    $sidebar.css({top: top + 20}).toggleClass('visible');
+  });
+
     // 搜尋列
     $('#search_input').focus( function(){$(this).select();} );
     // sidebar widget 自動折疊
@@ -318,8 +302,8 @@ function maincontentFx($)
   }
 
   // 留言音效
-  $('.comment_num_text').click( leq_se1.play );
-  $('.comment-link').click( leq_se1.play );
+  $('.comment_num_text').click(() => leq_se1.play());
+  $('.comment-link').click(() => leq_se1.play());
 
   // 內文折疊（磁鐵）
   $('#post-content-toggle').click(function(){
