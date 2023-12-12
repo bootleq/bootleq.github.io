@@ -10,9 +10,11 @@ function _resize_image(event) {const shrink = 250; let img = event.target; let $
   if (hOver > 0 || vOver > 0) {
     let originalSize = [img.width, img.height]; $img.data('original-width',  originalSize[0]); $img.data('original-height', originalSize[1]);
     if (hOver > vOver) {
-      img.width = window.innerWidth - shrink; img.height = originalSize[1] * img.width / originalSize[0];
+      img.width = window.innerWidth - (shrink > (window.innerWidth / 3) ? 0 : shrink);
+      img.height = originalSize[1] * img.width / originalSize[0];
     } else {
-      img.height = window.innerHeight - shrink; img.width = originalSize[0] * img.height / originalSize[1];
+      img.height = window.innerHeight - (shrink > (window.innerHeight / 3) ? 0 : shrink);
+      img.width = originalSize[0] * img.height / originalSize[1];
     }
   } else {
     if ($img.data('original-width')) {

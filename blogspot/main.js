@@ -217,6 +217,7 @@ function maincontentFx($)
     imageBlank: img_base+'img/lightbox/blank.gif',
     imageSrcLink: img_base+'img/lightbox/in-new-tab.svg',
     containerBorderSize: 15,
+    containerResizeSpeed: 240,
     onNextPrev: () => leq_se1.play(),
     onFinish:   () => leq_se2.play()
   });
