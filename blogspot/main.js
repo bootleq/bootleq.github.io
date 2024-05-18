@@ -223,7 +223,7 @@ function maincontentFx($)
   });
   $('.postcontent img:not(.no-lb)').each(function(){
     var fullSrc = $(this).attr('src');  // 原圖的位址
-    if( $(this).parent('a[href]').length && $.inArray($(this).parent('a').attr('href').split('.').pop().toLowerCase(), ['png','jpg','gif','bmp']) > -1){
+    if( $(this).parent('a[href]').length && $.inArray($(this).parent('a').attr('href').split('.').pop().toLowerCase(), ['png','jpg','gif','bmp','webp','avif']) > -1){
       fullSrc = $(this).parent('a').attr('href');
     }
     if( ! $(this).parent('a').length ) {
