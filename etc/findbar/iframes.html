@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Frame test</title>
+    <style>
+      iframe, blockquote {
+        margin: 1em;
+        width: 20vw;
+        aspect-ratio: 4/3;
+        box-sizing: border-box;
+      }
+      blockquote[contenteditable] {
+        padding: 1em;
+        outline: 2px solid gold;
+      }
+    </style>
+  </head>
+  <body>
+    <iframe id='F1' src='frame1.html'></iframe>
+    <iframe id='F2' src='https://www.facebook.com/privacy/center/'></iframe>
+    <iframe id='F3' src='https://example.org'></iframe>
+
+    <blockquote contenteditable='true'>
+      <p>Edit this content to add your own quote</p>
+      <p>Edit this content to add your own quote</p>
+      <p>Edit this content to add your own quote</p>
+    </blockquote>
+  </body>
+</html>
