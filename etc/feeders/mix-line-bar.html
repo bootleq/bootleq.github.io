@@ -1,0 +1,228 @@
+<!--
+	此示例下载自 https://echarts.apache.org/examples/zh/editor.html?c=mix-line-bar&code=PTAEEEFcBcAsHsBOAuUaBG97QDYFMBHAAQHMBbAQwEscA6AY3jICgRQBhRPC6PAE1SgATAAYhAFgC0IgJyShANlZgAsvD5UAZlX6pRE6XMXNmjAHYBnaKE3wz0AGIUyNAJ6gAvKABEAcgBy2PCgambBACrsvgA0oL6QVJJkdvAWAA4U9HgxcQDKDqHwkgBKeCSQOBSIOb4qeGY48DWhmU2xvux2FvCVFjUAMlToeIg8VHYhKTWdkIg6iKD-eADuNclh6ZnZ3gDcpl3WfDwUufCzWZ6gANqgbPpSsvIArMxoV96ALnqAYEre0QCMMkB0VEIhEwNBf3BYihAGYoeIoU8oQooQB2KEADihMnBfzBoj-kIJQlxcIJCIJSIJKIJ6IJWIJOP0-LERLEJP0MIAutFXtdvIApBMAlqGAGqdAI6-gAgo34KGVPGQIswVHDRRU4ZWq9VK_6o-UKMEalVag0GjHiDEySHGo3WtWG21_ISm1Fwq328QKVHOu3Kv5PJ4YhQ4g2-mSB9Eanl896ANlNAJ3av1RAYD0QUTwUMJR6cJCI9YiRidRfxRGL9DuiMhhQjLeIr8v-EnE4iRDpEMJh6Idntb_z-qI9KMJQlEA8JYhxhJhInEkPlqOn0R1QiekIU4iEfei4hhW6xMNDik3GKLCPdGMn0UrMIxu8UoIvindkbe3kAsVGADAzfv6j-XUXe8X64QdXtx39It_iebcOzXRt_nTC1_grM1YKeL1ewgmkRFTOl13nGEi1NTcFCLMEnnEOc4T9QMTyPAEL39GEqVRIR2wvEQnhEIkPWXYEh2TKsMzBAEINRJ9-UALrlAGUEwBVMMAMBcEzEPDDynOF2xkJ4STXIcKIzdSUzEcQcQUDFQRJDFHQxdEZCrER0VNEsEQrbcSTnTSUwModogAmQsSbD0OXYlD_hEc1nNDME-0AudwLheCzP-DNCJkUT3kAASNAHNFQBva0AQrlfldTVbTy70isKkqbXy8r61TOEAwSvUDwzT1gVIlTJzpdDgU7YFxDY8E90jLk9nMKxQEQeB6AATW4RALEuK5r1ic1YhkMFQHg1aSVWuFVoRVakVWlFVvRVasVWnFQDxFa8Uhc7oRura8R2_9YjxA68SOvETprZ68W-67BwGkwhsOKgyHqCxxksS4jmgE4zkQLJaAsHAqCyAAKP4AEpaEoNJUdG5ZPAAPhG-BliuEQuQxwaDlARUyGGRAHCQShoF4BYvFRgA3DGidAABJew6H8SB6ZGJnEBZ1HvAAL1gSRwgAdW8LHbAlnguap_ZLGsSgAGs8FyEYdBmjnoFcNI8FiRhGkQHmPGJ1GAG8-TNi3eTQa2kHd0ALCNvALH6ChXDOaAACFXFQXx8ZiF2sBwaAqDSVBnbQNBOYoHBIDwcWWbZ1A6YZnOeDZ72AF9eVLzWgdAVwpvCeAABFjl96wvBT4RQXEVBIT5ck9Ar6ntZsGg2fDyaqkuVHNFGshx8QWJunOPA7eJ9vq6oMw-DwAAPS5F_hvBya5WgN637eAHlNCnme581j2abMFZTiXve4YRnG8dJ3n8doaB4FyNIyMsh8HRrEU-O9QCSHOhjO-I08DQFmGYWmT8354D2KXQew1tDxxGOfMw7AgG6wcEgjmtcqgr1AKjVGFC1402hhQFuAsz6XDIYgeuTcYYtyuKwgG98h6-zmP7KGIMwYQwsNjCguMzDODwLzJ2tMZGxHoYwzeEDK6wOrqwphECvD0OfgfI-iMgF4HRljcBF8r6sNgWQVw7BYBVGgIjeB580gJzsE7PkaABHG29mgbe4Bt5UAsKgK4njU6O1AK7PAkd6A8DKEgVwvhQDl1uGAAAVpALBSALhcGnv7WAYS0ARPoagUaE0priKRijExWjVHbx5uXMJolK7oM1sofmQ1QDLBGLI8wnMRi8D4F0qgcBQCwFZmkYJIAjhmEoNNexapaAkBGbASA6AT7wGACQLAJB8CSFsPYSQf9JAWE5iQSQGQ4DAC1sNU5JApyXF8Jc2AyAQAqGOrQBQoAmK0G6n8UA_RVoiG-UIX5HEAVAtAGmMF_zAVyihQoGFEL4UGVoBCCF15fmgBEJ88FgLvKfOxbi2FHyvlmloL-ElNZQDkspRC6l0K_kQoJV8xleLSUgqRQALRCKAEstAMTnQxMSiFHoKU0uFXS_FwLaXsuWqASctBlr_IAIqQsdLQAkQK0VPGEE8TV4K1XLVoP8ocBr_nGqEOdGQtBJyqu1TCc6iKmXGvEOdGESrlygCNTi3VhJaDsQtTir5NrjIkstatAV4LwDCGFaIGQsaDUJuBcC_55oA2mnOn8W1EhvV8ptY6BNDo-XCorP8h0FLGwQChcKjigr_Ror-IKlN50S0mr9eIW1hq-WIqPF8osArUR8v1WZN1TaA1fJjexT5KEoXBtnS2tNI6hUip5e83sg63U_KYgmmN46txDv3e2bFJ7y04sdYGNF3bdWrhFaC3V0KGL_KnR6oyrLX0BhPamolOp_nkq9WqmVHrMLJoVYivU9rgXrl-RWc6vzBWiADcWmNtLc2obdYu4QWKB0lmfQq7NeF8O2v-ZhztfY_U4rUgmtVvarKgERaGQVeIdU0ttV6vdcbwXjq1Zhjd7ovk4sLNRjuYKh04vRcxJVRL0UxsUAKpswhe0Kcw0IG1gIiWpl1RxgVCgrXjoDFazD7YZ2sbtdWqsMGh0WYMmJ09NLQXXjHb6vsebGy_PdO62104aX6r9b26NULQVWSHepJV64v2trIkm4QnbdNfLVVFz0CHhXNRpaiJVV4FXAd9NWi6trnQ3XPQV0jgqMwipjWpJVqZdpVd1aR9Lv43VubbMJqL3UE1RZkEO90Arc3LhNeaatDbML_OG0RCLf7wMPtBVdatW4YMdY9QZUD36mwmoBFC9LporUJc7TZQVeoBXqXs58rc9GPWVjdbJ51s65NNls6t0FCn0wzrwwCQd5bQ2Fgmwq9LlZ_mXunFdld3kx2lszUZ3Vv4lUBfexaQ9anew_dU5q3NPyrI7cU71q1zpbWfokGixM3ylvVrbLi3VZO9R1bs5JhNuOmWyf1R6R1S5PnFbsxuiyW7QU7tAGuhV-rpyjZtQe3L6W_hnY3RLx1LbgUZhrb89jMWJ1fIJ2mATEWrxovUxBE1e4817k-aptLnyGIKtDfCw3pEh17tbBOs9Hq0wkc12psDIq1WG4TSj9SpXS3-mV1qlDlHCQ0uD87ltWurWIdREr6DjYrPpfjxFuXva_iOoHTH-1DFNVMY9Y6N1lZPVZvbW90FzF-1l_l7LrH_E-U6snU6z5_bwMa5bbT75MP7Xjqh5386-ry3Zpk-dPbwVh9XubRNp7_bO1tl1Wq_1EEx36qshR3rY70sWgb4q4Kjrt9nmTzdFjiGmx4bc0ZQVZ_rwH5tVOXVrPAyCrVcKoyUfhVXi-Sl3NeEFu5dBO5s9OKjY4eJ6wqBe4G3aoBc6AaXG2aakCuQ-EuLGiBbEB-iBoYbqummq328-DWHmt65od-sBNk9G-qV4NujeXW6eDG7ObeHqCaqY0BWe2aAUJBjBAuvyIecovyx6_OhuTGzq7KFaN6T27K4Gm25qEK24hKoa7KfBjeTKXKvgmC1gdyEujyzyrywA7y8oUmhYAqGKiKjqehgqgKAYtqUKy6cKpBFh-hVh5h5KbqphZGJ6-KnaoGrhUm5KVKbE9hwq3h1hfoth20UmgRJhwRdO2agq_OZkJqQqoqTWfhBhvhsRphhhCq56eaZhLO6WH-hhd-sWmRzqwg2auRAaK6Q6T-Yhvo-hZhh6F2c-Pa-hzGCaZhCaBaSRuq7RsmnGXuPRP2_Kjmh-TEjqT-vmg2_qe4LR-qzE50M2Z2U6taTa8BSxmGpoiunmFRfKHqhIzemqgYfKM2uaG6VGQ286IWZx_RM2cR_O46Xyxh9Kz-wg6WmOtxyuYOJmFmOWMaGYDG-uPxGWK2ra46no_aTORYpOZOEEFOkJZuvGwqTGnaJYea46RakR1qkaDe06hYVqWJxavGORs6zGbYyJvahGzGfYemiKA-sR8-iJmExeYYsxqO6eQWV-3xl6bYVqGYNqnJqBZe7qkhUmG6jqgKqavq9KrugBEK0GhmWKgKMp3yaJgKrx9x_Oa45h9xgKr6ipQR2pDBYRrx-B0pzx9GiJEK6pF6lhJ2RhaJihewzA8AriEMlw7cCcuA0SoA7caAvA280AkcgAFoqADQ6sKCKIAAzyEogAHqaADziTHKnD7AgMsKgJoBnL7GXN7GwD6dALkGbPgMnHyGwGgAco4M4G4OmWAI0t6XHAnEnJ6WEtAHMCQCQCMJHCMngGQLGanPUGzBQOgLmZEogFnL4qADvPWRQOwBYBYOECOZHJkiMCcngPgPQH6ZEiOTkKkqABnI0ATMkLOT7AuXgEuRDHWSOdma4H2V6anEWU4C4DgBHDYHYMWTea4EORWanBQIEhYAAArwAbx5y1lxnenmwem-D0CjQTkdlxmgWpAWCnnnmFKpyewoBxAADEgIMgvg8FpcYSWFaAr5f8PQmA28eZcZmg3ACCXAxFAFXAVgSAHpESbpfZvggAs4mAC0UTkBYAmagPWVnMkkOWgDYg4CPCMFOJRQBZEiMoxYAHn6HcDygA0amADTmhBQBRxaTFxQOZbPBWgCjHYKgHclOHxanHYPQIQkmUJYgHggQijEQmYKjCCOIBjAZa-XGQJWZRLqJQBQxcBdJeSKAApUpXGSpYmf2YOZpaANpWYLpWchLgZWgEZSZcPDguZfgoQsQrZRxPZY5QZfQgAGo6BBX0USXAWADjMYAJmmgAaZGABo6uxZxcFZbHAhQHwHgreUmSmbIk5anBYBQP0uABYHzJQE2cnOJe6ZHIAGfKgAGtqABdDhVYAOJO1VqltVyS2FQ5bZaQ9i4MwS_5AF4VsFdFoVmZ354MbiEVcQmArMTA_lqc-1DVGgZgJA3cWImFS1YSgV4QhVLVOAqZ65u5-F8cicYV2s3AQy8AmgoAW8yZFQ1gnldZVZic7lXiNV3FGlYl5g2gj8alIVYlqsuczZNgkAZgh5EwqMGQowZAPMF5cZXA5FSCxNzgv8hVewYl7V3pJ5OZu1YlhZD515bgSZnNJZt5mV8FI5ow45k505cQs5iA85i5y5mZOwoAhFJy9ifA81EeaQu8iAJA6AFAqMK0utsQ56VMSlr5r5-ATZm87lJSoNIilgYiaZfIyi8CISYS5NYVAgcQm5F1-8WQqAeiqCBlXteAAAEoDTjYjS-UOS7VQG7b4MTHZZ7agqZYlWPFNGlfpaDccPolkA5fBQHcHQ1aHepeHc7fBVHZHLHelfHUvInaPK4HPGldFenTDJncvP7agnnVvEhWHdhXyKJP4h-U7XGS7VEjEnEtsogIkgZe-UEoHMMDgHDZebzU-TzfYFzfzZhUXYPfBcPXELErwGPRPfBWkKkCMhDJHKdX_O2QZcDZoC3HoCSPBVPQHBvHRfGfNcmR9W1ZPR-a9fQLrINYFe9b7LxTnYAiMoMGjZ6a_UFe_UA0zRuR-d-b-TjREgAzYK1cA2JY_TPQufPRzSvXzc-aFUWTtS2TDEAhdffDbJHMhRQD2RdXA5bWUnPBYBvaAKJK4AEkEgPeElvUBZHOnJnNkAZdIqDJHNGYABD_gANCGACQ_xdS4MdWCA_R-dg3PZtZjYvdzfefg0-TFfeWrKzDjVzBnFnBQgLLgLQMLKLIzMzOrDLHLIrMrLQFjerAIzxWABdKCBjOvUo0Eog_YMg6FagzA0jQBThanK-aJN4v7Nw_xRQPrIbIIhYKjL4FrdUO0MhdbiIPQAoL4Nnc5XEwbH7Ek74MjI_DUKhX8PQPQDHrk0OXrIU4k8k6U0IyhcmfQCWBiLU2EvUwk8bE08_eU3gHgDKDKF0_k_E0U_02U-k6iJoH8HwPM2M2w8wBgkAA
+	⚠ 请注意，该图表不是 Apache ECharts 官方示例，而是由用户代码生成的。请注意鉴别其内容。
+-->
+<!DOCTYPE html>
+<html lang="en" style="height: 100%">
+<head>
+  <meta charset="utf-8">
+</head>
+<body style="height: 100%; margin: 0">
+  <div id="container" style="height: 100%"></div>
+
+  <script type="text/javascript" src="https://registry.npmmirror.com/echarts/5.5.1/files/dist/echarts.min.js"></script>
+  <!-- Uncomment this line if you want to dataTool extension
+  <script type="text/javascript" src="https://registry.npmmirror.com/echarts/5.5.1/files/dist/extension/dataTool.min.js"></script>
+  -->
+  <!-- Uncomment this line if you want to use gl extension
+  <script type="text/javascript" src="https://registry.npmmirror.com/echarts-gl/2/files/dist/echarts-gl.min.js"></script>
+  -->
+  <!-- Uncomment this line if you want to echarts-stat extension
+  <script type="text/javascript" src="https://registry.npmmirror.com/echarts-stat/latest/files/dist/ecStat.min.js"></script>
+  -->
+  <!-- Uncomment this line if you want to echarts-graph-modularity extension
+  <script type="text/javascript" src="https://registry.npmmirror.com/echarts-graph-modularity/2/files/dist/echarts-graph-modularity.min.js"></script>
+  -->
+  <!-- Uncomment this line if you want to use map
+  <script type="text/javascript" src="https://registry.npmmirror.com/echarts/4.9.0/files/map/js/world.js"></script>
+  -->
+  <!-- Uncomment these two lines if you want to use bmap extension
+  <script type="text/javascript" src="https://api.map.baidu.com/api?v=3.0&ak=YOUR_API_KEY"></script>
+  <script type="text/javascript" src="https://registry.npmmirror.com/echarts/5.5.1/files/dist/extension/bmap.min.js"></script>
+  -->
+
+  <script type="text/javascript">
+    var dom = document.getElementById('container');
+    var myChart = echarts.init(dom, null, {
+      renderer: 'canvas',
+      useDirtyRect: false
+    });
+    var app = {};
+
+    var option;
+
+// Author:   bootleq@gmail.com
+// Created:  2024-09-26
+// Modified: 2024-09-26
+
+const fontFamily = "'Noto Mono TC', 'ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', 'Liberation Mono', 'Courier New', 'monospace'";
+const dataSource = [ // 2024-09-25
+  ["年分",1999,2000,2001,2002,2003,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022,2023],
+  ["遊蕩犬統計",666594,null,null,null,null,179460,null,null,null,null,84891,null,null,null,null,null,128473,null,null,146773,null,155869,null,159697,null],
+  ["收容",78686,65636,63114,67025,78716,85512,93212,109394,124445,120337,127703,117676,112206,111029,113041,94741,79251,64276,43438,39626,48164,46830,32388,32600,32646],
+  ["認領",5881,9700,10553,12179,15816,15347,14244,16391,19348,16573,17536,20657,22741,31684,46160,54743,55694,48119,35835,27237,30501,26751,22286,21360,19537],
+  ["人道處理",70231,48043,37952,42223,53652,60249,68002,82887,92107,84854,93342,74422,64922,55398,45672,25057,10892,7960,763,174,153,91,82,136,469],
+  ["所內死亡",null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,12653,8636,6026,3677,2543,3307,2536,2127,2405,2039],
+];
+const rocYears = [88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112];
+
+const dimensions = dataSource.slice(1).map(row => row[0]);
+const numberFormatter = (v) => Intl.NumberFormat("zh-TW").format(v);
+const makeSeries = (type, color) => ({
+  type,
+  color,
+  seriesLayoutBy: 'row',
+  tooltip: {
+    valueFormatter: numberFormatter,
+  },
+});
+const yearToDataset = {
+  2004: 1,
+  2014: 2,
+};
+const filterByYear = (fromYear, source) => {
+  const index = source[0].indexOf(fromYear);
+  const newSource = source.map(row => row.toSpliced(1, index - 1));
+  return newSource;
+};
+const filterOnClickFn = (year) => (() => {
+  const datasetIndex = yearToDataset[year];
+  const series = dimensions.map(name => ({ name, datasetIndex }));
+  const yearIndex = dataSource[0].slice(1).indexOf(year);
+  myChart.setOption({
+    series,
+    xAxis: [
+      { type: 'category' }, // just force refresh
+      { data: rocYears.slice(yearIndex) },
+    ],
+  });
+});
+
+// Icons were converted with https://danmarshall.github.io/google-font-to-svg-path/
+const svg04 = 'path://M 98.6 72.401 L 90 72.401 L 90 56.401 L 59 56.401 L 59 49.001 L 88.4 0.601 L 98.6 0.601 L 98.6 48.701 L 109 48.701 L 109 56.401 L 98.6 56.401 L 98.6 72.401 Z M 85.8 18.601 L 67.7 48.701 L 90 48.701 L 90 30.901 Q 90 28.201 90.05 25.201 Q 90.1 22.201 90.2 19.301 Q 90.3 16.401 90.4 13.951 Q 90.5 11.501 90.6 9.801 L 90.2 9.801 A 28.209 28.209 0 0 1 89.584 11.324 Q 89.289 12 88.931 12.744 A 58.018 58.018 0 0 1 88.15 14.301 Q 86.816 16.87 85.824 18.56 A 50.657 50.657 0 0 1 85.8 18.601 Z M 17.874 72.729 A 18.437 18.437 0 0 1 10.3 69.001 Q 5 64.601 2.5 56.351 A 53.686 53.686 0 0 1 0.791 48.51 Q 0 43.069 0 36.601 Q 0 27.493 1.48 20.512 A 48.724 48.724 0 0 1 2.4 16.851 A 31.31 31.31 0 0 1 4.765 10.959 Q 6.892 6.968 10.05 4.351 A 18.201 18.201 0 0 1 17.466 0.719 Q 20.407 0.001 23.9 0.001 A 26.845 26.845 0 0 1 29.99 0.655 A 18.862 18.862 0 0 1 37.65 4.301 A 21.497 21.497 0 0 1 42.884 10.576 Q 44.446 13.341 45.5 16.801 A 52.927 52.927 0 0 1 47.209 24.626 Q 47.778 28.543 47.938 33.015 A 100.373 100.373 0 0 1 48 36.601 A 95.965 95.965 0 0 1 47.704 44.339 Q 47.409 47.97 46.824 51.189 A 58.061 58.061 0 0 1 46.65 52.101 A 43.499 43.499 0 0 1 45.119 57.842 Q 44.078 60.852 42.643 63.324 A 26.457 26.457 0 0 1 42.45 63.651 A 19.871 19.871 0 0 1 37.321 69.414 A 18.984 18.984 0 0 1 35 70.901 A 19.917 19.917 0 0 1 29.224 72.922 Q 26.822 73.386 24.078 73.4 A 33.605 33.605 0 0 1 23.9 73.401 A 25.673 25.673 0 0 1 17.874 72.729 Z M 35.411 59.437 A 17.143 17.143 0 0 0 36 58.451 A 24.566 24.566 0 0 0 38.099 53.139 Q 39.629 47.635 39.859 39.547 A 103.561 103.561 0 0 0 39.9 36.601 Q 39.9 29.528 38.958 24.201 A 40.911 40.911 0 0 0 38.2 20.751 A 27.447 27.447 0 0 0 36.813 16.751 Q 35.28 13.284 32.95 11.151 A 12.236 12.236 0 0 0 26.213 8.056 A 16.66 16.66 0 0 0 23.9 7.901 Q 18.5 7.901 15.1 11.001 A 14.008 14.008 0 0 0 12.46 14.335 Q 11.534 15.925 10.824 17.916 A 30.083 30.083 0 0 0 10.05 20.451 A 44.688 44.688 0 0 0 9.045 25.698 Q 8.682 28.386 8.524 31.499 A 100.441 100.441 0 0 0 8.4 36.601 Q 8.4 50.501 11.95 58.001 A 14.05 14.05 0 0 0 14.964 62.271 Q 17.746 64.895 21.907 65.387 A 16.973 16.973 0 0 0 23.9 65.501 Q 31.505 65.501 35.411 59.437 Z M 39.8 16.401 L 12.5 62.401 L 6.6 57.201 L 34.6 9.801 L 39.8 16.401 Z';
+const svg14 = 'path://M 94.9 71.8 L 86.3 71.8 L 86.3 55.8 L 55.3 55.8 L 55.3 48.4 L 84.7 0 L 94.9 0 L 94.9 48.1 L 105.3 48.1 L 105.3 55.8 L 94.9 55.8 L 94.9 71.8 Z M 82.1 18 L 64 48.1 L 86.3 48.1 L 86.3 30.3 Q 86.3 27.6 86.35 24.6 Q 86.4 21.6 86.5 18.7 Q 86.6 15.8 86.7 13.35 Q 86.8 10.9 86.9 9.2 L 86.5 9.2 A 28.209 28.209 0 0 1 85.884 10.723 Q 85.589 11.399 85.23 12.143 A 58.018 58.018 0 0 1 84.45 13.7 Q 83.116 16.269 82.124 17.959 A 50.657 50.657 0 0 1 82.1 18 Z M 18.6 71.8 L 18.6 27.2 Q 18.6 24.4 18.65 21.15 A 366.939 366.939 0 0 1 18.776 15.616 A 333.535 333.535 0 0 1 18.8 14.85 Q 18.9 11.8 19 9.6 A 50.712 50.712 0 0 1 17.657 10.33 Q 16.831 10.762 16.1 11.1 Q 14.806 11.697 12.223 12.988 A 369.332 369.332 0 0 0 12.2 13 L 3.9 17.3 L 0 10.5 L 19.9 0.4 L 27.2 0.4 L 27.2 71.8 L 18.6 71.8 Z M 42.3 71.8 L 3.6 71.8 L 3.6 65.8 L 18.6 64.8 L 27.2 64.8 L 42.3 65.8 L 42.3 71.8 Z';
+
+option = {
+  title: {
+    text: '全國遊蕩犬估計數量',
+    show: false,
+  },
+  // textStyle: {
+  //   fontFamily,
+  // },
+  tooltip: {
+    trigger: 'item',
+    enterable: true,
+    extraCssText: 'user-select: text',  // allow mouse selection
+    textStyle: {
+      fontFamily: fontFamily,
+    },
+    axisPointer: {
+      type: 'cross',
+      crossStyle: {
+        color: '#999'
+      }
+    }
+  },
+  toolbox: {
+    feature: {
+      restore: { title: '重設', show: true },
+      myFilter04: {
+        title: '從 2004 開始',
+        show: true,
+        icon: svg04,
+        onclick: filterOnClickFn(2004),
+      },
+      myFilter14: {
+        title: '從 2014 開始',
+        show: true,
+        icon: svg14,
+        onclick: filterOnClickFn(2014),
+      },
+      dataView: { title: '資料視圖', show: true, readOnly: false },
+      saveAsImage: { title: '另存為圖片', show: true }
+    },
+    emphasis: {
+      iconStyle: {
+        textPosition: 'bottom',
+        textPadding: 18,
+      }
+    },
+    showTitle: false, // use tooltip instead of default title
+    tooltip: {
+      show: true,
+      confine: true,
+      formatter: function (param) {
+        return param.title;
+      },
+      textStyle: {
+        fontFamily: fontFamily,
+      },
+      extraCssText: 'user-select: text; box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);',
+    },
+  },
+  legend: {
+    data: dimensions,
+  },
+  dataset: [
+    {
+      id: 'all',
+      source: dataSource,
+      sourceHeader: true,
+    },
+    {
+      id: '> 2004',
+      source: filterByYear(2004, dataSource),
+      sourceHeader: true,
+    },
+    {
+      id: '> 2014',
+      source: filterByYear(2014, dataSource),
+      sourceHeader: true,
+    }
+  ],
+  xAxis: [
+    {
+      type: 'category',
+      axisLabel: {
+        fontFamily: fontFamily,
+      },
+    },
+    {
+      type: 'category',
+      position: 'bottom',
+      offset: 22,
+      axisLine: { show: false },
+      axisTick: { show: false },
+      splitLine: { show: false },
+      axisPointer: { show: false },
+      axisLabel: {
+        fontFamily,
+        fontStyle: 'italic',
+        color: '#aab',
+      },
+      data: rocYears,
+    },
+  ],
+  yAxis: [
+    {
+      type: 'value',
+      name: '數量（萬）',
+      min: 0,
+      axisLabel: {
+        fontFamily: fontFamily,
+        formatter: (value) => Intl.NumberFormat("zh-TW").format(value / 10000)
+      },
+      axisPointer: {
+        show: false,
+      }
+    },
+  ],
+  series: [
+    makeSeries('bar', '#5470c6'),
+    makeSeries('line', '#91cc75'),
+    makeSeries('line', '#fac858'),
+    makeSeries('line', '#ee6666'),
+    makeSeries('line', '#7f1d1d'),
+  ]
+};
+
+
+    if (option && typeof option === 'object') {
+      myChart.setOption(option);
+    }
+
+    window.addEventListener('resize', myChart.resize);
+  </script>
+</body>
+</html>
