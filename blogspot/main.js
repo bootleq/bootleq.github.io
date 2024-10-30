@@ -253,7 +253,7 @@ function maincontentFx($)
 
       if ($(this).nextAll('.elevator').children('div.scrollContainer').length) {  // 已讀取留言 -> 只做展開／折疊
         var scrollContainer = $(this).nextAll('.elevator').children('div.scrollContainer');
-        scrollContainer.is(':visible') ? scrollContainer.fadeOut(0,leq_se2.play) : scrollContainer.fadeIn(0,leq_se1.play);
+        scrollContainer.is(':visible') ? scrollContainer.fadeOut(0,() => leq_se2.play()) : scrollContainer.fadeIn(0,() => leq_se1.play());
         elevator_box.stop(true,true).fadeOut(700);
       } else {  // 嘗試讀取留言
         if ($(this).text() <= 0) {
@@ -292,7 +292,7 @@ function maincontentFx($)
               });
             }
             else {
-              elevator_box.text('電梯爆了…').stop(true,true).fadeIn(700, leq_se2.play);
+              elevator_box.text('電梯爆了…').stop(true,true).fadeIn(700, () => leq_se2.play());
             }
           });
         }
