@@ -29,6 +29,28 @@ jQuery(document).ready( function($){
   dp.SyntaxHighlighter.ClipboardSwf = img_base + 'media/clipboard.swf';
   dp.SyntaxHighlighter.BloggerMode();
 
+  hljs.configure({
+    cssSelector: 'pre > code.hljs',
+    languages: [
+      'bash',
+      'c',
+      'css',
+      'ini',
+      'javascript',
+      'json',
+      'lua',
+      'makefile',
+      'php',
+      'python',
+      'ruby',
+      'scss',
+      'shell',
+      'sql',
+      'typescript',
+      'xml',
+    ],
+  });
+
   maincontentFx($);
   SidebarFx($);
 
@@ -197,6 +219,8 @@ function maincontentFx($)
   }
 
   // SyntaxHighlighter
+  hljs.highlightAll();
+
   dp.SyntaxHighlighter.HighlightAll('sh-code',true,true,false);
   $('.dp-highlighter').hover(function(){
       var bar = $(this).find('div.bar');
