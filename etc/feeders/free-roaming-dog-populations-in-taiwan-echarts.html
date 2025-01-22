@@ -215,7 +215,15 @@ option = {
     },
   ],
   series: [
-    makeSeries('bar', '#5470c6'),
+    { ...makeSeries('bar', '#5470c6'), ...{
+      label: {
+        show: true,
+        position: 'top',
+        formatter: (params) => Intl.NumberFormat("zh-TW").format(params.data[1]),
+        fontFamily: fontFamily,
+      },
+      // z: 4,
+    }},
     makeSeries('line', '#91cc75'),
     makeSeries('line', '#fac858'),
     makeSeries('line', '#ee6666'),
