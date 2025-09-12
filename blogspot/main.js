@@ -32,6 +32,7 @@ jQuery(document).ready( function($){
   hljs.configure({
     cssSelector: 'pre > code.hljs',
     languages: [
+      'vim',
       'bash',
       'c',
       'css',
