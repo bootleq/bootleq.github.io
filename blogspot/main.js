@@ -316,6 +316,10 @@ function maincontentFx($)
                 window.scrollTo( 0, $(this).closest('.elevator').offset().top );
                 leq_se1.play();
               });
+
+              if (typeof leqThreadComment === 'function') {
+                leqThreadComment();
+              }
             }
             else {
               elevator_box.text('電梯爆了…').stop(true,true).fadeIn(700, () => leq_se2.play());
