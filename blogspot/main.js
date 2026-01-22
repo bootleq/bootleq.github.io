@@ -295,7 +295,8 @@ function maincontentFx($)
                 var userinfo = entry.author[0].uri ?
                   '<a class="commenter" href="'+ entry.author[0].uri.$t +'">'+ entry.author[0].name.$t + '</a>' :
                   '<span class="commenter">'+ (entry.author[0].name.$t=='Anonymous' ? '匿名' : entry.author[0].name.$t) + '</span>';
-                html.push([ '<li class="comment'+ ((entry.author[0].name.$t=='bootleq')?' super_comment':'') +'" id="comment-'+ entry.id.$t +'">',
+                var commentId = /\d+$/.exec(entry.id.$t)?.[0];
+                html.push([ '<li class="comment'+ ((entry.author[0].name.$t=='bootleq')?' super_comment':'') +'" id="c-' + commentId +'" data-comment-id="' + commentId + '">',
                           '<div class="leq_rc_7"><div class="leq_rc_9"><div class="leq_rc_1"><div class="leq_rc_3"><div class="leq_rc_5">',
                           '<div class="comment_top">' + userinfo,
                           '<span class="comment_timestamp" title="' + entry.published.$t + '">',
